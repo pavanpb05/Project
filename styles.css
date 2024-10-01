@@ -1,0 +1,394 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #00b894;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.header-icons a:hover {
+    color: #00b894;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Workout Section */
+.workout-section {
+    background-color: #ede0d4;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #7f5539;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #6b705c;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 10px 30px;
+    background-color: #6ac435;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d4a373;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-bottom: 20px;
+    }
+}
+/* Diet Plan Section */
+.diet-plan-section {
+    background-color: #ede0d4;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.diet-plan-section .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.diet-plan-section .text-content {
+    flex: 1;
+}
+
+.diet-plan-section .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.diet-plan-section h2 {
+    color: #7f5539;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.diet-plan-section p {
+    color: #6b705c;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.diet-plan-section .cta-btn {
+    padding: 10px 30px;
+    background-color: #6ac435;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.diet-plan-section .cta-btn:hover {
+    background-color: #d4a373;
+}
+
+@media (max-width: 768px) {
+    .diet-plan-section .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .diet-plan-section .text-content {
+        margin-bottom: 20px;
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  background-image: url(https://www.shutterstock.com/image-photo/fit-sporty-young-black-man-600nw-2299289471.jpg);
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #463f3a; /* Dark brownish-grey */
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Section Titles */
+h2 {
+    color: black; 
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Level Sections */
+.level {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Beginner Color */
+.beginner {
+    background-color: #f4f3ee;
+  opacity: 0.6;/*Pale grey */
+}
+
+/* Intermediate Color */
+.intermediate {
+    background-color: #f4f3ee; 
+  opacity: 0.6;/*Pale grey */
+}
+
+/* Advanced Color */
+.advanced {
+    background-color: #f4f3ee; 
+  opacity: 0.6;/* Pale grey */
+}
+
+/* Exercise List */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    li {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #463f3a;
+    padding: 50px 0;
+    color: #f4f3ee;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-column h3, .footer-column h4 {
+    color: #e0afa0;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    font-size: 1.1rem;
+    color: #bcb8b1;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #f4f3ee;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #e0afa0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.footer-column button {
+    padding: 10px;
+    background-color: #e0afa0;
+    color: #463f3a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+    background-color: #f4f3ee;
+    color: #8a817c;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #8a817c;
+}
+
+.footer-bottom p {
+    color: #f4f3ee;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
